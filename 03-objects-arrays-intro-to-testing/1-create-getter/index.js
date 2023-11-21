@@ -13,7 +13,7 @@ export function createGetter(path) {
       if (result[prop]) {
         result = result[prop];
       } else {
-        return undefined;
+        return;
       }
     }
 

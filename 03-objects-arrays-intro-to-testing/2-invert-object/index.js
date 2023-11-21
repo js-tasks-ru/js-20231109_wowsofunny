@@ -5,8 +5,7 @@
  */
 export function invertObj(obj) {
   if (obj && Object.keys(obj).length) {
-    const newObj = { ...obj };
-    const objEntriesArr = Object.entries(newObj);
+    const objEntriesArr = Object.entries(obj);
 
     for (const item of objEntriesArr) {
       let temp = item[0];
@@ -19,6 +18,6 @@ export function invertObj(obj) {
   } else if (obj && !Object.keys(obj).length) {
     return {};
   } else {
-    return undefined;
+    return;
   }
 }
